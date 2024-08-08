@@ -1,0 +1,10 @@
+# Ignore arquivos temporários do Colab
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
+env/
+venv/
