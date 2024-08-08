@@ -27,14 +27,18 @@ class Meditations(Resource):
             meditations = json.load(f)
         return jsonify(meditations)
 
-# Classe para Chatbot (simulado para este exemplo)
+# Classe para Chatbot (simulação de respostas)
 class Chatbot(Resource):
     def post(self):
         data = request.get_json()
-        text = data['text']
-        # Simulação de resposta do chatbot
-        response = {"response": f"Você disse: {text}. Como posso ajudar?"}
-        return jsonify(response)
+        text = data['text'].lower()
+        if "oi" in text or "olá" in text:
+            response = "Olá! Como posso ajudar você hoje?"
+        elif "tudo bem" in text or "como você está" in text:
+            response = "Estou bem, obrigado! E você?"
+        else:
+            response = "Desculpe, não entendi. Pode reformular?"
+        return jsonify({"response": response})
 
 # Adicionar recursos à API
 api.add_resource(SentimentAnalysis, '/analyze')
