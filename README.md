@@ -22,11 +22,12 @@ perfurados pela indústria do petróleo — para mapear potencial geotérmico e 
 energética brasileira. Pipeline com extração por OCR, correção de Horner sobre Bottom Hole Temperature,
 calibração automática por bacia e ranqueamento para ciclo ORC. **155 testes** em CI. Deploy em Cloud Run.
 
-**LeadBellus** · Next.js, TypeScript, Stripe · `privado` · [leadbellus.com.br](https://leadbellus.com.br)
-Micro-SaaS em produção para clínicas de estética: respostas assistidas por IA no WhatsApp, follow-up e
-condução até o agendamento. Arquitetura híbrida — Vercel serve o front, Cloud Run processa a API.
-Autenticação com Clerk, billing com **Stripe em ambiente LIVE** com webhook, WhatsApp via Z-API validado
-em produção, e cadeia de fallback entre OpenAI, Anthropic e Gemini.
+**[LeadBellus](https://github.com/prinny2/leadvitta-app)** · Next.js 15, TypeScript, Stripe · `público` · [leadbellus.com.br](https://www.leadbellus.com.br)
+Micro-SaaS em produção para clínicas de estética: transforma a mensagem da cliente no WhatsApp em
+3 respostas prontas no tom da clínica, com guardrails de compliance, follow-up e condução até o
+agendamento. Clerk + Firebase (ponte de sessão), Firestore, **Stripe LIVE** com webhook e paywall por
+uso, WhatsApp via Z-API com auto-resposta, cadeia de fallback OpenAI → Anthropic → Gemini.
+**398 testes** (Vitest), deploy na Vercel.
 
 > Repositórios privados: código disponível sob solicitação em processo seletivo.
 
