@@ -1,6 +1,6 @@
 ## Vinícius Paes da Serra Freire
 
-**Desenvolvedor Full-Stack** — Next.js · Python · Google Cloud
+**Desenvolvedor Full-Stack** — Next.js · TypeScript · Python
 Belém, PA · disponível para remoto
 
 Construo sistemas de ponta a ponta: do pipeline de dados ao checkout com pagamento real.
@@ -13,7 +13,7 @@ Meus projetos não param no deploy — dois deles processam dados de produção 
 **[lead-intelligence](https://github.com/prinny2/lead-intelligence)** · Python · `público`
 Biblioteca de qualificação de leads com decisão comercial explícita — `accept` / `review` / `reject` —
 e lista de motivos rastreáveis para auditoria. Núcleo genérico, sem LLM e sem dependência de API externa:
-clone e rode em 30 segundos. 22 arquivos de teste cobrindo validação, scoring, qualificação e o fluxo
+clone e rode em 30 segundos. 21 arquivos de teste cobrindo validação, scoring, qualificação e o fluxo
 ponta a ponta.
 
 **ResonAnza** · Python, FastAPI, React · `privado`
@@ -22,12 +22,13 @@ perfurados pela indústria do petróleo — para mapear potencial geotérmico e 
 energética brasileira. Pipeline com extração por OCR, correção de Horner sobre Bottom Hole Temperature,
 calibração automática por bacia e ranqueamento para ciclo ORC. **155 testes** em CI. Deploy em Cloud Run.
 
-**[LeadBellus](https://github.com/prinny2/leadvitta-app)** · Next.js 15, TypeScript, Stripe · `público` · [leadbellus.com.br](https://www.leadbellus.com.br)
+**LeadBellus** · Next.js 15, TypeScript, Stripe · `privado` · [leadbellus.com.br](https://www.leadbellus.com.br)
 Micro-SaaS em produção para clínicas de estética: transforma a mensagem da cliente no WhatsApp em
 3 respostas prontas no tom da clínica, com guardrails de compliance, follow-up e condução até o
-agendamento. Clerk + Firebase (ponte de sessão), Firestore, **Stripe LIVE** com webhook e paywall por
-uso, WhatsApp via Z-API com auto-resposta, cadeia de fallback OpenAI → Anthropic → Gemini.
-**398 testes** (Vitest), deploy na Vercel.
+agendamento. Clerk + Firebase Auth (ponte de sessão) + Firestore, **Stripe em produção** (checkout, portal,
+webhooks idempotentes) com paywall por uso, WhatsApp via Z-API, fallback OpenAI → Anthropic → Gemini com
+timeout e retry, Supabase/Postgres com migrations e RLS, GA4 client e server.
+**398 testes Vitest em 35 arquivos**, deploy na Vercel.
 
 > Repositórios privados: código disponível sob solicitação em processo seletivo.
 
@@ -40,9 +41,9 @@ uso, WhatsApp via Z-API com auto-resposta, cadeia de fallback OpenAI → Anthrop
 | **Front-end** | Next.js, React, TypeScript, TailwindCSS |
 | **Back-end** | Python, FastAPI, Node.js, APIs REST |
 | **Dados** | PostgreSQL, Supabase, Firebase/Firestore, pandas, NumPy, SciPy |
-| **Cloud** | Google Cloud (Cloud Run, Vertex AI, Gemini), Vercel, Docker |
+| **Cloud** | Vercel, Firebase (Auth, Firestore, Admin SDK), Gemini API, Docker |
 | **Pagamentos** | Stripe — checkout, assinaturas, webhooks |
-| **Qualidade** | pytest, GitHub Actions, Git |
+| **Qualidade** | Vitest, pytest, GitHub Actions, Git |
 
 ---
 
