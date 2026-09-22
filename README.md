@@ -22,7 +22,7 @@ perfurados pela indústria do petróleo — para mapear potencial geotérmico e 
 energética brasileira. Pipeline com extração por OCR, correção de Horner sobre Bottom Hole Temperature,
 calibração automática por bacia e ranqueamento para ciclo ORC. **155 testes** em CI. Deploy em Cloud Run.
 
-**LeadBellus** · Next.js 15, TypeScript, Stripe · `privado` · [leadbellus.com.br](https://www.leadbellus.com.br)
+**[LeadBellus](https://github.com/prinny2/leadvitta-app)** · Next.js 15, TypeScript, Stripe · `público` · [leadbellus.com.br](https://www.leadbellus.com.br)
 Micro-SaaS em produção para clínicas de estética: transforma a mensagem da cliente no WhatsApp em
 3 respostas prontas no tom da clínica, com guardrails de compliance, follow-up e condução até o
 agendamento. Clerk + Firebase Auth (ponte de sessão) + Firestore, **Stripe em produção** (checkout, portal,
