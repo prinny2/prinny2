@@ -4,7 +4,7 @@
 Belém, PA · disponível para remoto
 
 Construo sistemas de ponta a ponta: do pipeline de dados ao checkout com pagamento real.
-Meus projetos não param no deploy — dois deles processam dados de produção e cobram clientes.
+Meus projetos não param no deploy: o LeadBellus está no ar com cobrança pela Stripe, ainda sem receita.
 
 ---
 
