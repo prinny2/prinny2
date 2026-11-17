@@ -1,36 +1,26 @@
-## Vinícius Paes da Serra Freire
+## Vinícius Freire
 
-**Desenvolvedor Full-Stack** — Next.js · TypeScript · Python
-Belém, PA · disponível para remoto
+Full-stack engineer, mostly Python and TypeScript. Belém, Brazil (UTC-3).
+Open to founding or early engineering roles, remote, as a contractor.
 
-Construo sistemas de ponta a ponta: do pipeline de dados ao checkout com pagamento real.
-Meus projetos não param no deploy: o LeadBellus está no ar com cobrança pela Stripe, ainda sem receita.
+[Portfolio](https://prinny2.github.io) · [LinkedIn](https://www.linkedin.com/in/viniciuspaesfreire/) · [Resume (PDF)](https://prinny2.github.io/vinicius-freire-resume.pdf) · vpaes.freire02@gmail.com
+
+In 2026 I built and ran three products on my own, from the data pipeline to billing and deploy.
 
 ---
 
-### Projetos
+### Projects
 
-**[lead-intelligence](https://github.com/prinny2/lead-intelligence)** · Python · `público`
-Biblioteca de qualificação de leads com decisão comercial explícita — `accept` / `review` / `reject` —
-e lista de motivos rastreáveis para auditoria. Núcleo genérico, sem LLM e sem dependência de API externa:
-clone e rode em 30 segundos. 21 arquivos de teste cobrindo validação, scoring, qualificação e o fluxo
-ponta a ponta.
+**ResonAnza** · Python, FastAPI, SQLAlchemy, Postgres, React · [resonanza.com.br](https://resonanza.com.br) · code private, site public in [resonanza-site](https://github.com/prinny2/resonanza-site)
+Energy data platform on public records from Brazil's oil regulator (ANP) for **31,244 wells**. Claude reads scanned PDF reports, dedicated parsers read AGP files and LAS well logs, and every record is checked against a schema before it is stored. Every number is labeled measured or modeled and keeps its source. FastAPI with JWT auth and rate limiting, Typer CLI, React 19 dashboard, Postgres on Cloud Run, PDF/GeoJSON/KML exports. **450+ pytest tests** with ruff and coverage in CI. Study stage.
 
-**ResonAnza** · Python, FastAPI, React · `privado`
-Plataforma de inteligência geoespacial que reinterpreta **31.244 poços públicos da ANP** — dados
-perfurados pela indústria do petróleo — para mapear potencial geotérmico e osmótico na transição
-energética brasileira. Pipeline com extração por OCR, correção de Horner sobre Bottom Hole Temperature,
-calibração automática por bacia e rótulo de medido ou modelado em cada número. **450+ testes** pytest em CI. Deploy em Cloud Run.
+**[LeadBellus](https://github.com/prinny2/leadvitta-app)** · Next.js 16, React 19, TypeScript, Firestore, Stripe · [leadbellus.com.br](https://www.leadbellus.com.br)
+WhatsApp sales replies for aesthetic clinics, written by AI. LLM fallback chain across OpenAI, Claude and Gemini with timeouts and retries, then compliance checks on every reply (no guaranteed results, diagnoses, or prices and policies the model made up). Stripe subscriptions in live mode with idempotent webhooks, WhatsApp through Meta's Cloud API and Z-API. Runs in Docker behind Caddy, deployed by GitHub Actions on every push to main. **400+ Vitest tests** with every network call mocked. Live, pre-revenue.
 
-**[LeadBellus](https://github.com/prinny2/leadvitta-app)** · Next.js 16, TypeScript, Stripe · `público` · [leadbellus.com.br](https://www.leadbellus.com.br)
-Micro-SaaS em produção para clínicas de estética: transforma a mensagem da cliente no WhatsApp em
-3 respostas prontas no tom da clínica, com guardrails de compliance, follow-up e condução até o
-agendamento. Clerk + Firebase Auth (ponte de sessão) + Firestore, **Stripe em produção** (checkout, portal,
-webhooks idempotentes) com paywall por uso, WhatsApp via Z-API, fallback OpenAI → Anthropic → Gemini com
-timeout e retry, Supabase/Postgres com migrations e RLS, GA4 client e server.
-**400+ testes Vitest**, deploy na Vercel.
+**[lead-intelligence](https://github.com/prinny2/lead-intelligence)** · Python, FastAPI · open source
+Lead qualification for solar installers: a rules engine that returns `accept`, `review` or `reject` with a list of reasons you can audit, plus a FastAPI layer with LLM scoring (Gemini, then Claude). The core has no external dependencies: clone and run in under a minute.
 
-> Repositórios privados: código disponível sob solicitação em processo seletivo.
+> ResonAnza's code is private; I can walk through it in an interview.
 
 ---
 
@@ -38,20 +28,16 @@ timeout e retry, Supabase/Postgres com migrations e RLS, GA4 client e server.
 
 | | |
 |---|---|
-| **Front-end** | Next.js, React, TypeScript, TailwindCSS |
-| **Back-end** | Python, FastAPI, Node.js, APIs REST |
-| **Dados** | PostgreSQL, Supabase, Firebase/Firestore, pandas, NumPy, SciPy |
-| **Cloud** | Vercel, Firebase (Auth, Firestore, Admin SDK), Gemini API, Docker |
-| **Pagamentos** | Stripe — checkout, assinaturas, webhooks |
-| **Qualidade** | Vitest, pytest, GitHub Actions, Git |
+| Languages | Python, TypeScript, JavaScript, SQL |
+| Backend | FastAPI, SQLAlchemy, Typer, Node.js |
+| Frontend | React, Next.js, Tailwind |
+| Data | PostgreSQL, SQLite, Firestore, pandas, NumPy |
+| AI | OpenAI, Anthropic and Gemini APIs, Ollama; Claude Code and Codex daily |
+| Cloud and ops | AWS (EC2, Lightsail), Google Cloud Run, Firebase, Docker Compose, Caddy, GitHub Actions |
+| Testing | pytest, Vitest, ruff |
 
 ---
 
-### Formação
+### Em português
 
-Cinco semestres de Engenharia de Produção na UEPA, com cálculo, álgebra linear, estatística e
-física. É a base que uso no tratamento de dados científicos da ResonAnza, não uma linha solta no currículo.
-
----
-
-**Contato:** vpaes.freire02@gmail.com
+Desenvolvedor full-stack em Belém (PA), Python e TypeScript. Em 2026 construí sozinho a ResonAnza (dados públicos da ANP para 31.244 poços), o LeadBellus (SaaS no ar com Stripe, ainda sem receita) e o lead-intelligence (open source). Disponível para vagas remotas, PJ.
