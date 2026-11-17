@@ -20,15 +20,15 @@ ponta a ponta.
 Plataforma de inteligência geoespacial que reinterpreta **31.244 poços públicos da ANP** — dados
 perfurados pela indústria do petróleo — para mapear potencial geotérmico e osmótico na transição
 energética brasileira. Pipeline com extração por OCR, correção de Horner sobre Bottom Hole Temperature,
-calibração automática por bacia e ranqueamento para ciclo ORC. **155 testes** em CI. Deploy em Cloud Run.
+calibração automática por bacia e rótulo de medido ou modelado em cada número. **450+ testes** pytest em CI. Deploy em Cloud Run.
 
-**[LeadBellus](https://github.com/prinny2/leadvitta-app)** · Next.js 15, TypeScript, Stripe · `público` · [leadbellus.com.br](https://www.leadbellus.com.br)
+**[LeadBellus](https://github.com/prinny2/leadvitta-app)** · Next.js 16, TypeScript, Stripe · `público` · [leadbellus.com.br](https://www.leadbellus.com.br)
 Micro-SaaS em produção para clínicas de estética: transforma a mensagem da cliente no WhatsApp em
 3 respostas prontas no tom da clínica, com guardrails de compliance, follow-up e condução até o
 agendamento. Clerk + Firebase Auth (ponte de sessão) + Firestore, **Stripe em produção** (checkout, portal,
 webhooks idempotentes) com paywall por uso, WhatsApp via Z-API, fallback OpenAI → Anthropic → Gemini com
 timeout e retry, Supabase/Postgres com migrations e RLS, GA4 client e server.
-**398 testes Vitest em 35 arquivos**, deploy na Vercel.
+**400+ testes Vitest**, deploy na Vercel.
 
 > Repositórios privados: código disponível sob solicitação em processo seletivo.
 
@@ -49,7 +49,7 @@ timeout e retry, Supabase/Postgres com migrations e RLS, GA4 client e server.
 
 ### Formação
 
-Três anos de Engenharia de Produção na UEPA — ciclo completo de cálculo, álgebra linear, estatística e
+Cinco semestres de Engenharia de Produção na UEPA, com cálculo, álgebra linear, estatística e
 física. É a base que uso no tratamento de dados científicos da ResonAnza, não uma linha solta no currículo.
 
 ---
