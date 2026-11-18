@@ -11,7 +11,7 @@ In 2026 I built and ran three products on my own, from the data pipeline to bill
 
 ### Projects
 
-**ResonAnza** · Python, FastAPI, SQLAlchemy, Postgres, React · [resonanza.com.br](https://resonanza.com.br) · code private, site public in [resonanza-site](https://github.com/prinny2/resonanza-site)
+**ResonAnza** · Python, FastAPI, SQLAlchemy, Postgres, React · [resonanza.com.br](https://resonanza.com.br) · code private; architecture and a tested Horner module in [resonanza-architecture](https://github.com/prinny2/resonanza-architecture)
 Energy data platform on public records from Brazil's oil regulator (ANP) for **31,244 wells**. Claude reads scanned PDF reports, dedicated parsers read AGP files and LAS well logs, and every record is checked against a schema before it is stored. Every number is labeled measured or modeled and keeps its source. FastAPI with JWT auth and rate limiting, Typer CLI, React 19 dashboard, Postgres on Cloud Run, PDF/GeoJSON/KML exports. **450+ pytest tests** with ruff and coverage in CI. Study stage.
 
 **[LeadBellus](https://github.com/prinny2/leadvitta-app)** · Next.js 16, React 19, TypeScript, Firestore, Stripe · [leadbellus.com.br](https://www.leadbellus.com.br)
@@ -20,7 +20,7 @@ WhatsApp sales replies for aesthetic clinics, written by AI. LLM fallback chain 
 **[lead-intelligence](https://github.com/prinny2/lead-intelligence)** · Python, FastAPI · open source
 Lead qualification for solar installers: a rules engine that returns `accept`, `review` or `reject` with a list of reasons you can audit, plus a FastAPI layer with LLM scoring (Gemini, then Claude). The core has no external dependencies: clone and run in under a minute.
 
-> ResonAnza's code is private; I can walk through it in an interview.
+> ResonAnza's product code is private; the [architecture repo](https://github.com/prinny2/resonanza-architecture) explains how it works, and I can walk through the code in an interview.
 
 ---
 
